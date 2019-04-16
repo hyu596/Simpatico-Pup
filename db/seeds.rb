@@ -9,9 +9,8 @@ customizes = [
   {:name => 'Title_Button', :content => 'Find out more', :location => "main_title" },
 
   {:name => 'Transition_Title', :content => 'Why are we doing this?', :location => "transition" }, 
-  {:name => 'Transition_Body', :content => 'At SimpaticoPup.com, we believe that no one should EVER pay money for a puppy unless they verify that the breeder 
-  standards listed above are being met. Buying a dog from an irresponsible breeder supports the largely unseen and unregulated industry of 
-  puppy mills and profit-motivated breeding.', :location => "transition" }, 
+  {:name => 'Transition_Body', :content => 'Our mission is to create a database of user-generated content about companion dogs and dog breeders, 
+    which will promote responsible dog breeding and help dog lovers find simpatico puppies with whom to share their homes and lives.', :location => "transition" }, 
   {:name => 'Transition_Button', :content => 'Get Started', :location => "transition" },
   
   {:name => 'Function_Title', :content => 'What We Provide', :location => "fuction" },
@@ -39,7 +38,7 @@ customizes = [
   {:name => 'Nav_Bar_3', :content => 'Goals', :location => "navigation_bar" },
   {:name => 'Nav_Bar_4', :content => 'How You Can Help', :location => "navigation_bar" },
   {:name => 'Nav_Bar_5', :content => 'Community Forum', :location => "navigation_bar" }]
-  
+
 customizes.each do |customize|
   Customize.create!(customize)
 end
@@ -338,4 +337,4 @@ texts.each do |text|
   Text.create!(text)
 end
 
-# AdminUser.create!(:email => 'admin@berkeley.edu', :password => 'password', :password_confirmation => 'password')
+#AdminUser.create!(:email => 'admin@berkeley.edu', :password => 'password', :password_confirmation => 'password')
