@@ -17,6 +17,14 @@
  
  /*bootstrap using online cdn provided*/
 
+#hidden_file {
+  display: none;
+}
+
+#edit_profile_image {
+  margin-bottom: 15px
+}
+
 #background {
     background-size: cover;
 }
@@ -312,7 +320,9 @@ body {
 .row_tagline {
     display: none;
 }
-
+.spacing{
+    margin-bottom: 7px;
+}
 .slider {
     display: none;
 }
@@ -682,6 +692,13 @@ h3.mission-text {
     margin: auto;
     text-align: center;
 }
+
+.btn-themed {
+    background-color: rgb(51, 153, 255);
+    color: #fff;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
 
 
 /*Iter 1-2*/
@@ -1107,6 +1124,10 @@ body,
     vertical-align: middle;
     border-radius: 25px;
 }
+
+.no_padding{
+    margin: 0;
+}
 /* End Dog detail page style*/
 
 /*****************************************************************************/
@@ -1187,4 +1208,7 @@ body,
         margin-left: 20px;
     }
 }
+
+
 /*End for Iter 1-2*/
+

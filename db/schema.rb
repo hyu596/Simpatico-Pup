@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170806102429) do
+ActiveRecord::Schema.define(version: 20190416001403) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "resource_id",   null: false
@@ -95,6 +95,17 @@ ActiveRecord::Schema.define(version: 20170806102429) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.boolean  "marked",     default: false
+  end
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.text     "open_response"
+    t.integer  "rate_dog"
+    t.integer  "breed_rating"
+    t.integer  "breeder_rating"
+    t.integer  "forum"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "search_breeder"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -426,6 +437,7 @@ ActiveRecord::Schema.define(version: 20170806102429) do
     t.datetime "activated_at"
     t.string   "reset_password_token"
     t.string   "remember_token"
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
